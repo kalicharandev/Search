@@ -1,20 +1,19 @@
-
 <!DOCTYPE html>
 <html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/main.css"/>
 <body>
 
-Name: <input type="text" id="myText" value="kalis">
-
-<p>Click the button to change the value of the text field.</p>
-
-<button onclick="myFunction()">Try it</button>
-<p id="demo"></p>
-
-<script>
-function myFunction() {
-   document.getElementById("demo").innerHTML = document.getElementById("myText").value;
-}
-</script>
+    <p id="demo"></p>
+<div id="usersearch">
+<input type="text" id="search" placeholder="type here..." required>
+    <button type="submit"onclick="onSubmit()">search</button>
+    </div>
+<script src="js/script.js" ></script>
 
 </body>
 </html>
+
+
