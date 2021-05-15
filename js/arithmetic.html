@@ -8,15 +8,22 @@
  <p id="demo"></p>
 <input type="text" id="" placeholder="kali"><br>
 <input type="text" id="search" placeholder="charan"><br>
-<button add onclick="function add()">Try it</button add>
-<button add onclick="function sub()">Try it</button add>
+<button add onclick="function add()">Add</button add>
+<button sub onclick="function sub()">Sub</button sub>
 <script>
     var a = 6;
     var b = 3;
 var x = (a+b);
-document.getElementById("demo").innerHTML = x;
+document.getElementById("demo").innerHTML = add;
   function add() { 
   document.getElementById("demo").innerHTML = x;
+  }
+  var a = 6;
+    var b = 3;
+var y = (a-b);
+document.getElementById("demo").innerHTML = sub;
+  function sub() { 
+  document.getElementById("demo").innerHTML = y;
   }
    </script>
 
