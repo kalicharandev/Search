@@ -2,25 +2,25 @@
 <html >
 <body>
     
-    
+    <form on submit=" return validate()">
         <label>username</label><br>
-    <input type="text"id="username"><br><br>
+    <input type="text"id="unmae"><br><br>
     <label>Password</label><br>
-    <input type="password"id="password"> <br><br>
-    <button type="button" onclick="function validate()">login</button>
+    <input type="password"id="pass"> <br><br>
+    <button type="submit" onclick= "validate()">login</button>
     
     <script>
         function validate()
         {
-var username=document.getElementById("username").value;
-var password=document.getElementById("password").value;
-if(username=="@" && password=="welcome")
+var username=document.getElementById("unname").value;
+var password=document.getElementById("pass").value;
+if(username=="@" || password=="welcome")
 {
-    alert("login successfully");
+    alert("In vaild username and password");
     return false;
 }
 else{
-    alert("In vaild username and password");
+    alert("login successfully");
     return true;
 }
     </script>
